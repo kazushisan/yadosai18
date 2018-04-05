@@ -126,6 +126,54 @@ div.cover{
         margin:15vh 0 15vh;
     }
 }
+
+header#globalHeader{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 2;
+    background-color: #fff;
+    overflow: hidden;
+    & > div{
+        margin: 20px 20px;
+        position: relative;
+    }
+    img.logo{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 40px;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+    img.nav{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    div.nav{
+        display: none;
+    }
+    div.nav.on{
+        display: block;
+    }
+    li{
+        list-style-type: none;
+        text-align: center;
+        margin: 1em 0;
+    }
+    a, a:hover{
+        color:inherit;
+        text-decoration: inherit
+    }
+    
+}
 div.content{
     background-color: #fff;
     overflow: hidden;
