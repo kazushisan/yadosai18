@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer')
 const imagemin = require('gulp-imagemin');
+const plumber = require('gulp-plumber');
 
 gulp.task('sass', function(){
     gulp.src('src/**/*.scss')
@@ -22,7 +23,7 @@ gulp.task('copy', function(){
                 '!src/**/*.+(jpg|jpeg|png|gif|scss)'
              ])
     .pipe(plumber())
-    .pipe(gulp.dest('live_build/'));
+    .pipe(gulp.dest('build/'));
 });
 
 gulp.task('watch', ['sass', 'imagemin', 'copy'], function () {

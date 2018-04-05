@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import "yugothic";
+@import "reset";
+
+$font-color: #333;
+$font-size: 14px;
+$theme-color: #aa00e8;
+$theme-shade: #8000af;
+
+body{
+    letter-spacing: 0.1em;
+    font-family: "Helvetica Neue", "Arial", 
+"Yu Gothic", "YuGothic", sans-serif;
+    color: $font-color;
+    background-color: #eee;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: inherit;
+    font:inherit;
+    color: $theme-color;
+}
+a:hover{
+    color: $theme-shade;
+}
+
+@mixin h($font-size){
+    font-size: $font-size;
+    margin: 1em 0;
+    font-weight: bold;
+}
+h1{
+    @include h(36px);
+}
+h2{
+    @include h(30px);
+}
+h3{
+    @include h(22px);
+}
+h4{
+    @include h(18px);
+}
+h5, h6{
+    @include h(14px);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+p{
+    margin: 1em 0;
+}
+div > a{
+    display: block;
+    margin: 1em 0;
+}
+li{
+    list-style-type: square;
+    list-style-position: inside;
+}
+table{
+    margin: 2em 0;
+}
+tr:nth-of-type(2n){
+    background-color: #ececec;
+}
+td, th{
+    padding: 0.5em;
+}
+div#main{
+    position: relative;
+    overflow: hidden;
+}
+div.notice{
+    background-color: #69d460;
+    color: #fff;
+    overflow: hidden;
+    & > div{
+        margin: 30px;
+    }
+    a{
+        color: inherit;
+    }
+    a:hover{
+        color: inherit;
+    }
+}
+div.cover{
+    color: #fff;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    & > div{       
+        margin: 60px 30px;
+    }
+    h6{
+        margin: 15vh 0 10vh 0;
+    }
+    h1{
+        margin: 0;
+        letter-spacing: 0.3em;
+    }
+    h4{
+        margin:0;
+        letter-spacing: 0.2em;
+    }
+    p{
+        margin: 0;
+    }
+    h5{
+        margin:0;
+    }
+    h5:nth-of-type(2){
+        span{
+            font-size: 24px;
+        }
+        margin:15vh 0 15vh;
+    }
+}
+div.content{
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    & > div{
+        margin: 60px 30px;
+    }
+}
+footer#globalFooter{
+    position: relative;
+    overflow: hidden;
+    & > div{
+        margin: 60px 30px;
+    }
+}
+@media screen and (min-width: 660px) {
+    div.cover > div{
+        width:600px;
+        margin: 60px auto;
+    }
+    div.notice > div{
+        width:600px;
+        margin: 30px auto;
+    }
+    div.content > div{
+        width:600px;
+        margin: 60px auto;
+    }
+    footer#globalFooter > div{
+        width:600px;
+        margin: 60px auto;
+        
+    }
+    div.cover{
+        max-height: 600px;
+    }
+}
