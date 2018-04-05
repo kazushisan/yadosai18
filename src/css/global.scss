@@ -128,7 +128,7 @@ div.cover{
 }
 
 header#globalHeader{
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     right:0;
@@ -143,19 +143,21 @@ header#globalHeader{
         height: 40px;
         width: 40px;
         border-radius: 20px;
-        margin: 0 auto;
+        margin: 20px auto;
         display: block;
+		z-index: 2;
     }
     h1{
         font-size: 20px;
         line-height: 40px;
-        margin: 20px 0 0 0;
+        margin: 20px 0;
         text-align: center;
     }
     img.nav{
         position: absolute;
         top:0;
         left:0;
+		cursor: pointer;
     }
     div.nav{
         display: none;
