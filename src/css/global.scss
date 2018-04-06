@@ -90,6 +90,12 @@ div.notice{
         color: inherit;
     }
 }
+.topPage header#globalHeader h1{
+	display: none;
+}
+.topPage div#main{
+	margin-top: 0;
+}
 div.cover{
     color: #fff;
     text-align: center;
@@ -103,7 +109,8 @@ div.cover{
         margin: 60px 30px;
     }
     h6{
-        margin: 15vh 0 10vh 0;
+        margin: 10vh 0 10vh 0;
+		padding-top: 60px;
     }
     h1{
         margin: 0;
@@ -176,6 +183,12 @@ header#globalHeader{
         text-decoration: inherit
     }
     
+}
+div#main{
+	margin-top: 100px;
+	& > div{
+		overflow: hidden;
+	}
 }
 div.content{
     background-color: #fff;
