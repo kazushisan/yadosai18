@@ -135,22 +135,23 @@ header#globalHeader{
     z-index: 2;
     background-color: #fff;
     overflow: hidden;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.2);
     & > div{
-        margin: 20px 20px;
+        margin: 10px;
         position: relative;
     }
     img.logo{
         height: 40px;
         width: 40px;
         border-radius: 20px;
-        margin: 20px auto;
+        margin: 10px auto;
         display: block;
 		z-index: 2;
     }
     h1{
         font-size: 20px;
         line-height: 40px;
-        margin: 20px 0;
+        margin: 10px 0;
         text-align: center;
     }
     img.nav{

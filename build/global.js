@@ -12,12 +12,12 @@ window.addEventListener("scroll", function(){
     if(!wait){
 		wait = true;		
         setTimeout(function(){
-			if(window.pageYOffset <= 60){
+			if(window.pageYOffset <= 50){
 				console.log(-window.pageYOffset);
 				headerH1.style.marginTop = - window.pageYOffset + "px";
-				headerH1.style.opacity = 1-window.pageYOffset/60;
+				headerH1.style.opacity = 1-window.pageYOffset/50;
 			}else{
-				headerH1.style.marginTop = "-60px";
+				headerH1.style.marginTop = "-50px";
 				headerH1.style.opacity = 0;
 			}
             wait = false;
