@@ -34,6 +34,10 @@ a:hover{
     margin: 1em 0;
     font-weight: bold;
 }
+@mixin gradient($direction: bottom){
+    background-color: $theme-color;
+    background: linear-gradient(to $direction, $theme-color 0%, $theme-shade 100%);
+}
 h1{
     @include h(36px);
 }
@@ -105,6 +109,7 @@ div.cover{
     background-size:cover;
     overflow: hidden;
     color: ＃fff;
+    position: relative;
     & > *{
         margin: 60px 30px;
     }
@@ -115,12 +120,21 @@ div.cover{
     h5 span{
         font-size: 24px;
     }
-
+    &:after{
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        content:"";
+        border-right: solid 100vw $background-color;
+        border-top: solid 10vw transparent;
+    }
 }
+
+
 div.search{
     margin: 30px 0;
-    background-color: $theme-color;
-    background: linear-gradient(to bottom, $theme-color 0%, $theme-shade 100%);
+    @include gradient();
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -216,6 +230,8 @@ div.topNav{
         margin: 60px 30px;
     }
 }
+
+//色付きのナビゲーションメニュー
 div.colorButtons{
     display: flex;
     flex-wrap: wrap;
@@ -227,8 +243,7 @@ div.colorButton{
     flex-shrink: 0;
     color: #fff;
     & > div{
-        background-color: $theme-color;
-        background: linear-gradient(to bottom, $theme-color 0%, $theme-shade 100%);
+        @include gradient();
         border-radius: 5px;
         margin: 10px;
         height: 80px;
@@ -252,5 +267,70 @@ div.colorButton{
         position: absolute;
         bottom: 0;
         margin: 10px;
+    }
+}
+
+div.subHeader{
+    overflow: hidden;
+    position: relative;
+    & > div{
+        display: flex;
+        align-items: stretch;
+        text-align: center;
+    }
+    div.item{
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        position: relative;
+        padding: 10px;
+        @include gradient(left);
+
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left:0;
+            background-color: $background-color;
+            z-index: 0;
+        }
+        &.selected:before{
+            margin-bottom: 2px;
+        }
+    }
+    h4{
+        margin: 0;
+        position: relative;
+    }
+}
+div.schedule{
+    overflow: hidden;
+    background-color: $background-color-2;
+    div.row{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        h3{
+            margin: 0;
+        }
+        p{
+            margin:0;
+        }
+        div.time{
+            flex-basis: 30%;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+            font-size: 18px;
+            padding: 10px 15px 10px 30px;
+        }
+        div.info{
+            flex-basis: 70%;
+            padding: 10px 30px 10px 15px;
+        }
+        &:hover{
+            background-color: $background-color;
+        }
     }
 }
