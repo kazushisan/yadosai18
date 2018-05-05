@@ -6,6 +6,7 @@ navMenu.onclick = function(){
     nav.classList.toggle("on");
 }
 
+//スクロールに応じてヘッダーを変更
 var wait = false;
 
 window.addEventListener("scroll", function(){
