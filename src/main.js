@@ -1,3 +1,10 @@
+import axios from 'axios'
+
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter);
+
 const navMenu = document.querySelector("header#globalHeader img.nav");
 const nav = document.querySelector("header#globalHeader div.nav");
 const headerH1 = document.querySelector("header#globalHeader h1");

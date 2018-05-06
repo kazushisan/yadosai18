@@ -10,11 +10,22 @@
   "author": "Kazushi Konosu",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^3.2.1",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "vue-loader": "^15.0.9",
+    "webpack": "^4.7.0",
+    "webpack-stream": "^4.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1"
   }
 }
