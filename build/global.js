@@ -14,7 +14,6 @@ window.addEventListener("scroll", function(){
 		wait = true;		
         setTimeout(function(){
 			if(window.pageYOffset <= 50){
-				console.log(-window.pageYOffset);
 				headerH1.style.marginTop = - window.pageYOffset + "px";
 				headerH1.style.opacity = 1-window.pageYOffset/50;
 			}else{
@@ -24,4 +23,40 @@ window.addEventListener("scroll", function(){
             wait = false;
         }, 30);
     }
+})
+
+var vm = new Vue({
+	el: '#app',
+	data: {
+		"booths": [],
+		"query": ""
+	},
+	mounted(){
+		axios.get("./data/booth.json").then(response => { this.booths = response.data.booths })
+	},
+	computed: {
+		boothsResult: function(){
+			let booths = this.booths;
+			let queryArray = this.query.toLowerCase().split(/\s|　/);
+			return booths.filter(booth => (
+				queryArray.every(function(query){
+					if(booth.title.toLowerCase().indexOf(query) != -1){
+						return true;
+					} else if(booth.group.toLowerCase().indexOf(query) != -1){
+						return true;
+					} else if(booth.product.toLowerCase().indexOf(query) != -1){
+						return true;
+					} else if(booth.description.toLowerCase().indexOf(query) != -1){
+						return true;
+					} else if(booth.open.some(text => text.toLowerCase().indexOf(query) != -1)){
+						return true;
+					} else if(booth.category.some(text => text.toLowerCase().indexOf(query) != -1)){
+						return true;
+					} else {
+						return false;
+					}
+				})
+			));
+		}
+	}
 })

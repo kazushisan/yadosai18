@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
+<!--
+
+-->
+
 <head>
     <meta charset="UTF-8">
     <title>第44回筑波大学宿舎祭公式ホームページ やどかり祭</title>
@@ -7,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body class="topPage">
     <div id="app">
 
@@ -17,31 +22,42 @@
                 <img class="nav" src="img/menu.png" alt="メニュー">
                 <div class="nav">
                     <ul>
-                        <li><a href="">トップ</a></li>
-                        <li><a href="">会場案内</a></li>
-                        <li><a href="">企画</a></li>
-                        <li><a href="">アクセス</a></li>
+                        <li>
+                            <a href="">トップ</a>
+                        </li>
+                        <li>
+                            <a href="">会場案内</a>
+                        </li>
+                        <li>
+                            <a href="">企画</a>
+                        </li>
+                        <li>
+                            <a href="">アクセス</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </header>
-        <div id="main">           
+        <div id="main">
             <div>
                 <div class="cover">
                     <div>
                         <h4>第44回筑波大学宿舎祭</h4>
                         <h1>やどかり祭</h1>
                         <h5>祭馬鹿～今年もみんなで祭履修～</h5>
-                        <h5>前夜祭:<span>5</span>月<span>25</span>日 本祭:<span>26</span>日</h5>
+                        <h5>前夜祭:
+                            <span>5</span>月
+                            <span>25</span>日 本祭:
+                            <span>26</span>日</h5>
 
                     </div>
                 </div>
                 <div class="topNav">
                     <div>
                         <div class="search">
-                                <div>
-                                    <input type="text" name="" id="search" placeholder="ブース、企画、ステージ出演情報を検索...">
-                                </div>
+                            <div>
+                                <input type="text" name="" id="search" placeholder="ブース/企画/ステージ情報を検索" v-model="query">
+                            </div>
                         </div>
                         <div class="colorButtons">
                             <div class="colorButton">
@@ -68,7 +84,7 @@
                     </div>
                 </div>
                 <div class="content">
-                   <div>
+                    <div>
                         <h1>アクセス</h1>
                         <p>つくばエクスプレス つくば駅から</p>
                         <p>つくば駅前バスターミナル6番乗り場 筑波大学循環バス</p>
@@ -77,13 +93,13 @@
                             <li>左回りの場合「天久保二丁目」下車</li>
                         </ul>
                         <p>交通規制については追って掲載いたします。</p>
-                   </div>
+                    </div>
                 </div>
                 <div class="content">
-                   <div>
+                    <div>
                         <h1>イベント</h1>
                         <p>詳細が決定次第掲載いたします。</p>
-                   </div>
+                    </div>
                 </div>
                 <div class="subHeader">
                     <div>
@@ -116,16 +132,37 @@
                     </div>
                 </div>
             </div>
+            <div class="content booth">
+                <div>
+                    <h1>ブース一覧</h1>
+                    <div class="colorButtons">
+                        <div class="colorButton"  v-for="booth in boothsResult">
+                            <div>
+                                <h4>{{ booth.title }}</h4>
+                            </div>
+                            <p>{{ booth.group }}</p>
+                            <p>{{ booth.description }}</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer id="globalFooter">
             <div>
-                <p><a href="http://www.stb.tsukuba.ac.jp/~yadokari/mogiten/index.html">模擬店出店団体の方へ</a></p>
-                <p><a href="shinkan.html">新歓情報はこちら&raquo;</a></p>
+                <p>
+                    <a href="http://www.stb.tsukuba.ac.jp/~yadokari/mogiten/index.html">模擬店出店団体の方へ</a>
+                </p>
+                <p>
+                    <a href="shinkan.html">新歓情報はこちら&raquo;</a>
+                </p>
                 <p>&copy; 第44回筑波大学宿舎祭実行委員会</p>
             </div>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="lib/axios.min.js"></script>
+    <script src="lib/vue-2.js"></script>
     <script src="global.js"></script>
 </body>
+
 </html>

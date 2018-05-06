@@ -139,7 +139,21 @@ div.search{
     overflow: hidden;
     border-radius: 5px;
     & > div{
-        margin: 2px;
+        margin: 2px 2px 2px 44px;
+        position: relative;
+    }
+    &:before{
+        content: "";
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-size: 24px 24px;
+        background-position: center;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        padding: 8px;
+        left:0;
+        top:0;
     }
     input{
         font-size: 1rem;
@@ -150,6 +164,8 @@ div.search{
         display: block;
         width: 100%;
         box-sizing: border-box;
+        background-color: $background-color;
+        color: #fff;
     }
 }
 header#globalHeader{
@@ -242,12 +258,17 @@ div.colorButton{
     flex-basis: 50%;
     flex-shrink: 0;
     color: #fff;
+    overflow: hidden;
     & > div{
         @include gradient();
         border-radius: 5px;
         margin: 10px;
-        height: 80px;
+        height: 100px;
         position: relative;
+        text-overflow: ellipsis;
+    }
+    & > p{
+        margin: 10px;
     }
     & > div:before{
         position: absolute;
@@ -263,7 +284,6 @@ div.colorButton{
         border-radius: 3px;
     }
     h4{
-        margin: 0;
         position: absolute;
         bottom: 0;
         margin: 10px;
