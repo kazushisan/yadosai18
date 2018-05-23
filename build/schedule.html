@@ -6,13 +6,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>第44回筑波大学宿舎祭 やどかり祭</title>
+    <title>ブース一覧 - 第44回筑波大学宿舎祭 やどかり祭</title>
     <link rel="stylesheet" href="css/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
-<body class="topPage">
+<body>
     <div id="app">
             <header id="globalHeader">
                     <div>
@@ -42,42 +42,34 @@
                 </header>
         <div id="main">
             <div>
-                <div class="cover">
+                <div class="subHeader">
                     <div>
-                        <h4>第44回筑波大学宿舎祭</h4>
-                        <h1>やどかり祭</h1>
-                        <h5>祭馬鹿～今年もみんなで祭履修～</h5>
-                        <h5>前夜祭:
-                            <span>5</span>月
-                            <span>25</span>日 本祭:
-                            <span>26</span>日</h5>
-                    </div>
-                </div>
-                <div class="topNav">
-                    <div>
-                        <div class="colorButtons">
-                            <a class="colorButton" href="./booths.html">
-                                    <div>
-                                        <h4>ブース</h4>
-                                    </div>
-                            </a>
-                            <a class="colorButton" href="./events.html">
-                                <div>
-                                    <h4>企画</h4>
-                                </div>
-                            </a>
-                            <a class="colorButton" href="./access.html">
-                                <div>
-                                    <h4>会場アクセス・地図</h4>
-                                </div>
-                            </a>
-                            <a class="colorButton" href="schedule.html">
-                                <div>
-                                    <h4>ステージ情報</h4>
-                                </div>
-                            </a>
+                        <div class="item" v-for="location in stage.day1" v-key="location.title" v-on:click="setLocation(location.title)" v-bind:class="isColor(location.title)">
+                            <h4>{{ location.title }}</h4>
                         </div>
                     </div>
+                </div>
+                <div class="schedule">
+                    <h3>前夜祭</h3>
+                    <div class="row" v-for="event in scheduleForLocation1.events" v-key="event.title" v>
+                        <div class="time">
+                            <p>{{ event.time }}</p>
+                        </div>
+                        <div class="info">
+                            <h4>{{ event.group }}</h4>
+                            <h3>{{ event.title }}</h3>
+                        </div>
+                    </div>
+                    <h3>本祭</h3>
+                    <div class="row" v-for="event in scheduleForLocation2.events" v-key="event.title" >
+                            <div class="time">
+                                <p>{{ event.time }}</p>
+                            </div>
+                            <div class="info">
+                                <h4>{{ event.group }}</h4>
+                                <h3>{{ event.title }}</h3>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

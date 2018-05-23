@@ -19,13 +19,15 @@ body{
     line-height: 1.5;
     font-weight: normal;
 }
-
-a{
+a, a:hover{
+    font: inherit;
+    color: inherit;
     text-decoration: inherit;
-    font:inherit;
+}
+p > a{
     color: $theme-color;
 }
-a:hover{
+p > a:hover{
     color: $theme-shade;
 }
 
@@ -62,7 +64,6 @@ p{
 }
 div > a{
     display: block;
-    margin: 1em 0;
 }
 li{
     list-style-type: square;
@@ -220,7 +221,7 @@ header#globalHeader{
     
 }
 div#main{
-	margin-top: 100px;
+	margin-top: 110px;
 	& > div{
 		overflow: hidden;
 	}
@@ -253,7 +254,7 @@ div.colorButtons{
     flex-wrap: wrap;
     margin: -10px;
 }
-div.colorButton{
+.colorButton{
     display: block;
     flex-basis: 50%;
     flex-shrink: 0;
@@ -297,11 +298,12 @@ div.subHeader{
         display: flex;
         align-items: stretch;
         text-align: center;
+        overflow-x: scroll;
     }
     div.item{
-        flex-basis: 50%;
+        flex-basis: auto;
         flex-grow: 1;
-        flex-shrink: 1;
+        flex-shrink: 0;
         position: relative;
         padding: 10px;
         @include gradient(left);
@@ -329,15 +331,23 @@ div.subHeader{
 div.schedule{
     overflow: hidden;
     background-color: $background-color-2;
+    h3{
+        margin: 30px;
+    }
     div.row{
         display: flex;
         flex-wrap: nowrap;
         align-items: stretch;
         h3{
             margin: 0;
+            font-size: 18px;
         }
         p{
             margin:0;
+        }
+        h4{
+            margin: 0;
+            font-size: 14px;
         }
         div.time{
             flex-basis: 30%;
@@ -353,4 +363,80 @@ div.schedule{
             background-color: $background-color;
         }
     }
+}
+div.boothWindowWrap{
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index: 10;
+    display: none;
+    font-size: 0;
+    line-height: 100vh;
+    &.show{
+        display: block;
+    }
+    div.background{
+        background-color:rgba(0,0,0,0.8);
+        position: absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+    }
+}
+div.boothWindow{
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #333;
+    div.title{
+        @include gradient();
+        color: #fff;
+        overflow: hidden;
+        padding: 30px;
+        h1{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+        span{
+            margin-right: 0.5em;
+        }
+    }
+    div.content{
+        margin: 30px;
+        background-color: inherit;
+        p{
+            margin: 0;
+        }
+        h4{
+            margin: 0;
+        }
+        a{
+            display: block;
+            text-align:center;
+        }
+        span{
+            border-radius: 3px;
+            padding: 0.25em 0.5em;
+            @include gradient();
+            color: #fff;
+            margin-right: 0.5em;
+            display: inline-block;
+        }
+        section{
+            margin: 1em 0;
+        }
+    }
+
 }

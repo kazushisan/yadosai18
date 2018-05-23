@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>第44回筑波大学宿舎祭公式ホームページ やどかり祭</title>
+    <title>第44回筑波大学宿舎祭 やどかり祭</title>
     <link rel="stylesheet" href="css/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,29 +14,32 @@
 
 <body class="topPage">
     <div id="app">
-        <header id="globalHeader">
-            <div>
-                <img class="logo" src="img/yadokari.jpg" alt="やどかり">
-                <h1>筑波大学宿舎祭やどかり祭</h1>
-                <img class="nav" src="img/menu.png" alt="メニュー">
-                <div class="nav">
-                    <ul>
-                        <li>
-                            <a href="">トップ</a>
-                        </li>
-                        <li>
-                            <a href="">会場案内</a>
-                        </li>
-                        <li>
-                            <a href="">企画</a>
-                        </li>
-                        <li>
-                            <a href="">アクセス</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+            <header id="globalHeader">
+                    <div>
+                        <img class="logo" src="img/yadokari.jpg" alt="やどかり">
+                        <h1>筑波大学宿舎祭やどかり祭</h1>
+                        <img class="nav" src="img/menu.png" alt="メニュー">
+                        <div class="nav">
+                            <ul>
+                                <li>
+                                    <a href="./">トップ</a>
+                                </li>
+                                <li>
+                                    <a href="./booths.html">ブース</a>
+                                </li>
+                                <li>
+                                    <a href="./events.html">企画</a>
+                                </li>
+                                <li>
+                                    <a href="./access.html">会場アクセス・地図</a>
+                                </li>
+                                <li>
+                                    <a href="./schedule.html">ステージ情報</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
         <div id="main">
             <div>
                 <div class="cover">
@@ -52,95 +55,27 @@
                 </div>
                 <div class="topNav">
                     <div>
-                        <div class="search">
-                            <div>
-                                <input type="text" name="" id="search" placeholder="ブース/企画/ステージ情報を検索" v-model="query">
-                            </div>
-                        </div>
                         <div class="colorButtons">
-                            <div class="colorButton">
-                                <div>
-                                    <h4>ブース</h4>
-                                </div>
-                            </div>
-                            <div class="colorButton">
+                            <a class="colorButton" href="./booths.html">
+                                    <div>
+                                        <h4>ブース</h4>
+                                    </div>
+                            </a>
+                            <a class="colorButton" href="./events.html">
                                 <div>
                                     <h4>企画</h4>
                                 </div>
-                            </div>
-                            <div class="colorButton">
+                            </a>
+                            <a class="colorButton" href="./access.html">
                                 <div>
                                     <h4>会場アクセス・地図</h4>
                                 </div>
-                            </div>
-                            <div class="colorButton">
+                            </a>
+                            <a class="colorButton" href="schedule.html">
                                 <div>
                                     <h4>ステージ情報</h4>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div>
-                        <h1>アクセス</h1>
-                        <p>つくばエクスプレス つくば駅から</p>
-                        <p>つくば駅前バスターミナル6番乗り場 筑波大学循環バス</p>
-                        <ul>
-                            <li>右回りの場合「平砂学生宿舎前」下車</li>
-                            <li>左回りの場合「天久保二丁目」下車</li>
-                        </ul>
-                        <p>交通規制については追って掲載いたします。</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div>
-                        <h1>イベント</h1>
-                        <p>詳細が決定次第掲載いたします。</p>
-                    </div>
-                </div>
-                <div class="subHeader">
-                    <div>
-                        <div class="item selected">
-                            <h4>メインステージ</h4>
-                        </div>
-                        <div class="item">
-                            <h4>ミニステージ</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="schedule">
-                    <div class="row">
-                        <div class="time">
-                            <p>10:00-12:00</p>
-                        </div>
-                        <div class="info">
-                            <h3>ぱーぷるーむ</h3>
-                            <p>ぱーぷるーむによるパフォーマンスです。</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="time">
-                            <p>12:00-13:00</p>
-                        </div>
-                        <div class="info">
-                            <h3>津軽三味線無絃塾</h3>
-                            <p>三味線によるパフォーマンスを行います。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content booth">
-                    <div>
-                        <h1>ブース一覧</h1>
-                        <div class="colorButtons">
-                            <div class="colorButton" v-for="booth in boothsResult" v-bind:key="booth.title">
-                                <div>
-                                    <h4>{{ booth.title }}</h4>
-                                </div>
-                                <p>{{ booth.group }}</p>
-                                <p>{{ booth.product }}</p>
-                                <p></p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

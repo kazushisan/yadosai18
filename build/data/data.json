@@ -1,173 +1,247 @@
 {
-    "stage": [
-        "前夜祭": {
-            "メインステージ": [
-                {
-                    "group": "野外ライブ",
-                    "title": "愛してないわけ。（クリープハイプ）",
-                    "start-time": "17:00"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "Limited Students （ヤバイTシャツ屋さん）",
-                    "start-time": "17:22"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "キャンディーズ（Drop's）",
-                    "start-time": "17:44"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "ほとばしる俺のアレ  (COWPERS)",
-                    "start-time": "18:06"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "新・亜空間グルービー (school food punishment)",
-                    "start-time": "18:28"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "芦田愛菜(ACIDMAN)",
-                    "start-time": "18:50"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "yobai  (yonige)",
-                    "start-time": "19:12"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "SOSO  (teto)",
-                    "start-time": "19:34"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "Avenged Metal Beast (Avenged Sevenfold)",
-                    "start-time": "19:56"
-                },
-                {
-                    "group": "野外ライブ",
-                    "title": "Delankey Jet City  (Blankey Jet City)",
-                    "start-time": "20:18"
-                }
-            ],
-            "ミニステージ": [
-                {
-                    "title": "フォルクローレ愛好会",
-                    "start-time": "18:00",
-                    "end-time": "18:45"
-                },
-                {
-                    "title": "ギターマンドリン部",
-                    "start-time": "19:00",
-                    "end-time": "19:30"
-                },
-                {
-                    "title": "弾き語りサーク\"アンプラグド\"",
-                    "start-time": "19:45",
-                    "end-time": "20:45"
-                }
-            ],
-            "大演芸": [
-                {
-                    "title": "Doo-Wop",
-                    "start-time": "19:25",
-                    "end-time": "19:55"
-                }
-            ]
-        },
-        "本祭": {
-            "メインステージ": [
-                {
-                    "group": "ダンス",
-                    "title": "体操部",
-                    "start-time": "12:30"
-                },
-                {
-                    "group": "ダンス",
-                    "title": "桐斬舞",
-                    "start-time": "12:45"
-                },
-                {
-                    "group": "ダンス",
-                    "title": "purplume",
-                    "start-time": "13:20"
-                },
-                {
-                    "group": "ダンス",
-                    "title": "ダンス部",
-                    "start-time": "13:45"
-                },
-                {
-                    "group": "ダンス",
-                    "title": "Real Jam",
-                    "start-time": "14:25"
-                }, 
-                {
-                    "group": "大学生クイズ",
-                    "title": "大学生クイズ",
-                    "start-time": "16:20",
-                    "end-time": "17:35"
-                },  
-                {
-                    "group": "花火",
-                    "title": "花火",
-                    "start-time": "19:10",
-                    "end-time": "19:15"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "春日エリア",
-                    "start-time": "19:26"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "春日エリア",
-                    "start-time": "19:26"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "春日エリア",
-                    "start-time": "19:26"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "国際総合学類",
-                    "start-time": "19:32"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "社会工学類",
-                    "start-time": "19:38"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "社会学類",
-                    "start-time": "19:44"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "体育専門学群",
-                    "start-time": "19:44"
-                } ,
-                {
-                    "group": "ゆかコン",
-                    "title": "芸術専門学群",
-                    "start-time": "20:02"
-                },
-                {
-                    "group": "ゆかコン",
-                    "title": "医学学群",
-                    "start-time": "20:08"
-                }
-            ],
-            "ミニステージ":[
-
-            ]
-        }
-    ],
+    "stage": {
+        "day1": [
+            {
+                "title": "メインステージ",
+                "events": [
+                    {
+                        "group": "野外ライブ",
+                        "title": "愛してないわけ。（クリープハイプ）",
+                        "start_time": "17:00"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "Limited Students （ヤバイTシャツ屋さん）",
+                        "start_time": "17:22"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "キャンディーズ（Drop's）",
+                        "start_time": "17:44"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "ほとばしる俺のアレ  (COWPERS)",
+                        "start_time": "18:06"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "新・亜空間グルービー (school food punishment)",
+                        "start_time": "18:28"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "芦田愛菜(ACIDMAN)",
+                        "start_time": "18:50"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "yobai  (yonige)",
+                        "start_time": "19:12"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "SOSO  (teto)",
+                        "start_time": "19:34"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "Avenged Metal Beast (Avenged Sevenfold)",
+                        "start_time": "19:56"
+                    },
+                    {
+                        "group": "野外ライブ",
+                        "title": "Delankey Jet City  (Blankey Jet City)",
+                        "start_time": "20:18"
+                    }
+                ]
+            },
+            {
+                "title": "ミニステージ",
+                "events": [
+                    {
+                        "title": "フォルクローレ愛好会",
+                        "start_time": "18:00",
+                        "end_time": "18:45"
+                    },
+                    {
+                        "title": "ギターマンドリン部",
+                        "start_time": "19:00",
+                        "end_time": "19:30"
+                    },
+                    {
+                        "title": "弾き語りサーク\"アンプラグド\"",
+                        "start_time": "19:45",
+                        "end_time": "20:45"
+                    }
+                ]
+            },
+            {
+                "title": "大演劇",
+                "events": [
+                    {
+                        "title": "Doo-Wop",
+                        "start_time": "19:25",
+                        "end_time": "19:55"
+                    }
+                ]
+            }
+        ],
+        "day2": [
+            {
+                "title": "メインステージ",
+                "events": [
+                    {
+                        "group": "ダンス",
+                        "title": "体操部",
+                        "start_time": "12:30"
+                    },
+                    {
+                        "group": "ダンス",
+                        "title": "桐斬舞",
+                        "start_time": "12:45"
+                    },
+                    {
+                        "group": "ダンス",
+                        "title": "purplume",
+                        "start_time": "13:20"
+                    },
+                    {
+                        "group": "ダンス",
+                        "title": "ダンス部",
+                        "start_time": "13:45"
+                    },
+                    {
+                        "group": "ダンス",
+                        "title": "Real Jam",
+                        "start_time": "14:25"
+                    }, 
+                    {
+                        "group": "大学生クイズ",
+                        "title": "大学生クイズ",
+                        "start_time": "16:20",
+                        "end_time": "17:35"
+                    },  
+                    {
+                        "group": "花火",
+                        "title": "花火",
+                        "start_time": "19:10",
+                        "end_time": "19:15"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "春日エリア",
+                        "start_time": "19:26"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "春日エリア",
+                        "start_time": "19:26"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "春日エリア",
+                        "start_time": "19:26"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "国際総合学類",
+                        "start_time": "19:32"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "社会工学類",
+                        "start_time": "19:38"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "社会学類",
+                        "start_time": "19:44"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "体育専門学群",
+                        "start_time": "19:44"
+                    } ,
+                    {
+                        "group": "ゆかコン",
+                        "title": "芸術専門学群",
+                        "start_time": "20:02"
+                    },
+                    {
+                        "group": "ゆかコン",
+                        "title": "医学学群",
+                        "start_time": "20:08"
+                    }
+                ]
+            },
+            {
+                "title": "ミニステージ",
+                "events": [
+                    {
+                        "title": "つくばフォーク村",
+                        "start_time": "12:30",
+                        "end_time": "13:00"
+                    },
+                    {
+                        "title": "無弦塾",
+                        "start_time": "13:25",
+                        "end_time": "13:55"
+                    },
+                    {
+                        "title": "ヒーローアクション同好会",
+                        "start_time": "14:20",
+                        "end_time": "14:50"
+                    },
+                    {
+                        "title": "Doo-Wop",
+                        "start_time": "15:10",
+                        "end_time": "15:35"
+                    },
+                    {
+                        "title": "合唱団ムクドリ",
+                        "start_time": "16:40",
+                        "end_time": "17:10"
+                    },
+                    {
+                        "title": "筑波NeopolisBIGBAND",
+                        "start_time": "17:25",
+                        "end_time": "18:05"
+                    },
+                    {
+                        "title": "JAZZ愛好会",
+                        "start_time": "18:20",
+                        "end_time": "19:00 "
+                    }
+                ]
+            },
+            {
+                "title": "大演劇",
+                "events": [
+                    {
+                        "title": "ジャグリングサークルSheep",
+                        "start_time": "12:30",
+                        "end_time": "13:00 "
+                    },
+                    {
+                        "title": "ジャグリングサークルSheep",
+                        "start_time": "13:30",
+                        "end_time": "14:00"
+                    },
+                    {
+                        "title": "無弦塾",
+                        "start_time": "14:30",
+                        "end_time": "15:30"
+                    },
+                    {
+                        "title": "purplume",
+                        "start_time": "18:00",
+                        "end_time": "18:45"
+                    }
+                ]
+            }           
+        ]
+    },
     "booths": [
         {
             "category": [
@@ -1134,7 +1208,7 @@
             "category": [
                 "軽食"
             ],
-            "title": "辺境(春日)のフランクフルト屋 〜やど祭支店〜※春日はルビ",
+            "title": "辺境(春日)のフランクフルト屋 〜やど祭支店〜",
             "group": "知識情報・図書館学類1-3,4",
             "product": "フランクフルト",
             "description": "遠い春日の地から出張開店！できたての美味しいフランクフルトを召し上がれ！",

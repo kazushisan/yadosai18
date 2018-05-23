@@ -6,13 +6,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>第44回筑波大学宿舎祭 やどかり祭</title>
+    <title>ブース一覧 - 第44回筑波大学宿舎祭 やどかり祭</title>
     <link rel="stylesheet" href="css/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
-<body class="topPage">
+<body>
     <div id="app">
             <header id="globalHeader">
                     <div>
@@ -42,40 +42,29 @@
                 </header>
         <div id="main">
             <div>
-                <div class="cover">
-                    <div>
-                        <h4>第44回筑波大学宿舎祭</h4>
-                        <h1>やどかり祭</h1>
-                        <h5>祭馬鹿～今年もみんなで祭履修～</h5>
-                        <h5>前夜祭:
-                            <span>5</span>月
-                            <span>25</span>日 本祭:
-                            <span>26</span>日</h5>
-                    </div>
-                </div>
                 <div class="topNav">
                     <div>
+                        <div class="search">
+                            <div>
+                                <input type="text" name="" id="search" placeholder="ブースを検索" v-model="query">
+                            </div>
+                        </div>
+
+                        <p>例）<span v-on:click="setQuery('本祭 デザート')">"本祭 デザート"</span>、<span v-on:click="setQuery('軽食')">"軽食"</span>、<span v-on:click="setQuery('生物資源')">"生物資源"</span></p>
+                    </div>
+                </div>
+                <div class="content booth">
+                    <div>
+                        <h1>ブース一覧</h1>
                         <div class="colorButtons">
-                            <a class="colorButton" href="./booths.html">
-                                    <div>
-                                        <h4>ブース</h4>
-                                    </div>
-                            </a>
-                            <a class="colorButton" href="./events.html">
+                            <div class="colorButton" v-for="booth in boothsResult" v-bind:key="booth.title" v-on:click="setBooth(booth)">
                                 <div>
-                                    <h4>企画</h4>
+                                    <h4>{{ booth.title }}</h4>
                                 </div>
-                            </a>
-                            <a class="colorButton" href="./access.html">
-                                <div>
-                                    <h4>会場アクセス・地図</h4>
-                                </div>
-                            </a>
-                            <a class="colorButton" href="schedule.html">
-                                <div>
-                                    <h4>ステージ情報</h4>
-                                </div>
-                            </a>
+                                <p>{{ booth.group }}</p>
+                                <p>{{ booth.product }}</p>
+                                <p></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,6 +81,34 @@
                 <p>&copy; 第44回筑波大学宿舎祭実行委員会</p>
             </div>
         </footer>
+        <div class="boothWindowWrap" v-bind:class="{show: showBoothWindow}">
+            <div class="background" v-on:click="closeBoothWindow"></div>
+            <div class="boothWindow">
+                <div class="title">
+                    <p>
+                        <span v-for="item in booth.category" v-key="item" v-on:click="setQuery(item)">{{item}}</span>
+                    </p>
+                    <h1>
+                        {{ booth.title }}
+                    </h1>
+                </div>
+                <div class="content">
+                    <section>
+                        <h4>{{ booth.group }}</h4>
+                        <p>{{ booth.product }}</p>
+                    </section>
+                    <section>
+                        <p>{{ booth.description }}</p>
+                    </section>
+                    <section>
+                        <p>
+                            <span v-for="item in booth.open" v-key="open" v-on:click="setQuery(item)">{{ item }}</span>
+                        </p>
+                    </section>
+                    <a v-on:click="closeBoothWindow">閉じる</a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="bundle.js"></script>
 </body>
