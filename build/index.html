@@ -14,7 +14,6 @@
 
 <body class="topPage">
     <div id="app">
-
         <header id="globalHeader">
             <div>
                 <img class="logo" src="img/yadokari.jpg" alt="やどかり">
@@ -49,7 +48,6 @@
                             <span>5</span>月
                             <span>25</span>日 本祭:
                             <span>26</span>日</h5>
-
                     </div>
                 </div>
                 <div class="topNav">
@@ -131,18 +129,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content booth">
-                <div>
-                    <h1>ブース一覧</h1>
-                    <div class="colorButtons">
-                        <div class="colorButton"  v-for="booth in boothsResult">
-                            <div>
-                                <h4>{{ booth.title }}</h4>
+                <div class="content booth">
+                    <div>
+                        <h1>ブース一覧</h1>
+                        <div class="colorButtons">
+                            <div class="colorButton" v-for="booth in boothsResult" v-bind:key="booth.title">
+                                <div>
+                                    <h4>{{ booth.title }}</h4>
+                                </div>
+                                <p>{{ booth.group }}</p>
+                                <p>{{ booth.product }}</p>
+                                <p></p>
                             </div>
-                            <p>{{ booth.group }}</p>
-                            <p>{{ booth.product }}</p>
-                            <p></p>
                         </div>
                     </div>
                 </div>

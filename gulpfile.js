@@ -37,8 +37,8 @@ gulp.task('copy', function(){
 gulp.task('watch', ['sass', 'js', 'copy', 'imagemin'], function () {
     gulp.watch('src/**/*.scss', ['sass']);
     gulp.watch('src/**/*.+(jpg|jpeg|png|gif)', ['imagemin']);
-    gulp.watch('src/**/*.js', ['js']);
+    gulp.watch('src/**/*.+(js|vue)', ['js']);
     gulp.watch(['src/**/*',
-                '!src/**/*.+(jpg|jpeg|png|gif|scss|js)'
+                '!src/**/*.+(jpg|jpeg|png|gif|scss|js|vue)'
              ], ['copy']);
 });

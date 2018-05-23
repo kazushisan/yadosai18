@@ -1,13 +1,14 @@
-import axios from 'axios'
-
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import axios from 'axios';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
 const navMenu = document.querySelector("header#globalHeader img.nav");
 const nav = document.querySelector("header#globalHeader div.nav");
 const headerH1 = document.querySelector("header#globalHeader h1");
+
+
 
 navMenu.onclick = function(){
     nav.classList.toggle("on");
@@ -31,15 +32,19 @@ window.addEventListener("scroll", function(){
         }, 30);
     }
 })
-
 var vm = new Vue({
 	el: '#app',
 	data: {
 		"booths": [],
-		"query": ""
+		"stage": []
+		"query": '',
+		"sample": ''
 	},
 	mounted(){
-		axios.get("./data/booth.json").then(response => { this.booths = response.data.booths })
+		axios.get("./data/data.json").then(response => {
+			this.booths = response.data.booths;
+			this.stage = respose.data.stage;		
+		})
 	},
 	computed: {
 		boothsResult: function(){
