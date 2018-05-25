@@ -11,7 +11,7 @@
                     },
                     {
                         "group": "野外ライブ",
-                        "title": "Limited Students （ヤバイTシャツ屋さん）",
+                        "title": "03 Limited Students （ヤバイTシャツ屋さん）",
                         "start_time": "17:22"
                     },
                     {
@@ -77,7 +77,7 @@
                 ]
             },
             {
-                "title": "大演劇",
+                "title": "大演芸",
                 "events": [
                     {
                         "title": "Doo-Wop",
@@ -127,16 +127,6 @@
                         "title": "花火",
                         "start_time": "19:10",
                         "end_time": "19:15"
-                    },
-                    {
-                        "group": "ゆかコン",
-                        "title": "春日エリア",
-                        "start_time": "19:26"
-                    },
-                    {
-                        "group": "ゆかコン",
-                        "title": "春日エリア",
-                        "start_time": "19:26"
                     },
                     {
                         "group": "ゆかコン",
@@ -216,7 +206,7 @@
                 ]
             },
             {
-                "title": "大演劇",
+                "title": "大演芸",
                 "events": [
                     {
                         "title": "ジャグリングサークルSheep",
@@ -328,8 +318,8 @@
             ],
             "title": "たのしすの森",
             "group": "たのしすの森",
-            "product": "ノンアルカクテル",
-            "description": "かんぱーい！お洒落ノンアルカクテルで気分はほろ酔い♪気になるあの子にアタックしよう♪",
+            "product": "ミックスジュース",
+            "description": "ミックスジュースです。",
             "open": [
                 "本祭"
             ]
