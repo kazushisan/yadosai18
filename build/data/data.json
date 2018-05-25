@@ -60,26 +60,22 @@
                 "title": "ミニステージ",
                 "events": [
                     {
-                        "title": "フォルクローレ愛好会",
-                        "start_time": "18:00",
-                        "end_time": "18:45"
-                    },
-                    {
-                        "title": "ギターマンドリン部",
+                        "title": "アカペラサークルDoo-Wop",
                         "start_time": "19:00",
                         "end_time": "19:30"
                     },
                     {
-                        "title": "弾き語りサーク\"アンプラグド\"",
+                        "title": "引き語りサークル\"アンプラグド\"",
                         "start_time": "19:45",
                         "end_time": "20:45"
                     }
                 ]
             },
             {
-                "title": "大演芸",
+                "title": "平砂共用棟前交差点",
                 "events": [
                     {
+                        "group": "大演芸",
                         "title": "Doo-Wop",
                         "start_time": "19:25",
                         "end_time": "19:55"
@@ -91,6 +87,12 @@
             {
                 "title": "メインステージ",
                 "events": [
+
+                    {
+                        "title": "本祭オープニング",
+                        "start_time": "11:10",
+                        "end_time": "12:05"
+                    },
                     {
                         "group": "ダンス",
                         "title": "体操部",
@@ -121,45 +123,39 @@
                         "title": "大学生クイズ",
                         "start_time": "16:20",
                         "end_time": "17:35"
-                    },  
-                    {
-                        "group": "花火",
-                        "title": "花火",
-                        "start_time": "19:10",
-                        "end_time": "19:15"
                     },
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "春日エリア",
                         "start_time": "19:26"
                     },
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "国際総合学類",
                         "start_time": "19:32"
                     },
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "社会工学類",
                         "start_time": "19:38"
                     },
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "社会学類",
                         "start_time": "19:44"
                     },
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "体育専門学群",
                         "start_time": "19:44"
                     } ,
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "芸術専門学群",
                         "start_time": "20:02"
                     },
                     {
-                        "group": "ゆかコン",
+                        "group": "ゆかたコンテスト",
                         "title": "医学学群",
                         "start_time": "20:08"
                     }
@@ -206,24 +202,28 @@
                 ]
             },
             {
-                "title": "大演芸",
+                "title": "平砂共用棟前交差点",
                 "events": [
                     {
+                        "group": "大演芸",
                         "title": "ジャグリングサークルSheep",
                         "start_time": "12:30",
                         "end_time": "13:00 "
                     },
                     {
+                        "group": "大演芸",
                         "title": "ジャグリングサークルSheep",
                         "start_time": "13:30",
                         "end_time": "14:00"
                     },
                     {
+                        "group": "大演芸",
                         "title": "無弦塾",
                         "start_time": "14:30",
                         "end_time": "15:30"
                     },
                     {
+                        "group": "大演芸",
                         "title": "purplume",
                         "start_time": "18:00",
                         "end_time": "18:45"
