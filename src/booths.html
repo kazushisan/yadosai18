@@ -110,6 +110,11 @@
                             <span v-for="item in booth.open" v-key="open" v-on:click="setQuery(item)">{{ item }}</span>
                         </p>
                     </section>
+                    <section>
+                        <h6>場所</h6>
+                        <p>{{ booth.location }}</p>
+                        <p><a href="./access.html">地図を見る &raquo;</a></p>
+                    </section>
                     <a v-on:click="closeBoothWindow">閉じる</a>
                 </div>
             </div>

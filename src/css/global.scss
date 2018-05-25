@@ -419,10 +419,10 @@ div.boothWindow{
         p{
             margin: 0;
         }
-        h4{
+        h4, h6{
             margin: 0;
         }
-        a{
+        & > a{
             display: block;
             text-align:center;
         }
