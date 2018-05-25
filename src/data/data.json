@@ -60,7 +60,12 @@
                 "title": "ミニステージ",
                 "events": [
                     {
-                        "title": "アカペラサークルDoo-Wop",
+                        "title": "フォルクローレ愛好会",
+                        "start_time": "18:00",
+                        "end_time": "18:45"
+                    },
+                    {
+                        "title": "ギター・マンドリン部",
                         "start_time": "19:00",
                         "end_time": "19:30"
                     },
