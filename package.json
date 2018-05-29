@@ -27,6 +27,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "css-loader": "^0.28.11",
+    "npm": "^6.1.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   }
