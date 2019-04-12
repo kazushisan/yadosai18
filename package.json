@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "gulp watch",
-    "server": "http-server -c-1 ./build"
+    "server": "http-server -c-1 ./build",
+    "deploy": "gh-pages -d ./build"
   },
   "author": "Kazushi Konosu",
   "license": "MIT",
@@ -13,6 +14,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-imagemin": "^4.1.0",
@@ -27,7 +29,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "css-loader": "^0.28.11",
-    "npm": "^6.1.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   }
